@@ -16,27 +16,39 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="theme-color" content="#ffffff" />
-  <title>CodeDev</title>
+  <title>CodeDev ・ ABOUT</title>
   <style>
     @font-face {
       font-family: 'Sor';
       src: url('./Fonts/Sor.woff2') format('woff2');
     }
 
-    body {
+    * {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
       padding: 0;
-      background-color: rgb(16, 16, 16);
-      height: 100vh;
+      height: 100%;
       font-family: 'Sor', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      background-color: rgb(16, 16, 16);
       color: white;
-      text-align: center;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
     }
 
     .text-logo {
@@ -48,15 +60,14 @@
     }
 
     .image-logo {
-      max-width: 300px;
-      max-height: 300px;
+      max-width: 100px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
     }
 
     .content {
-      margin-top: 30px;
       max-width: 640px;
-      font-size: 16px;
-      line-height: 1.8;
     }
 
     h2 {
@@ -89,11 +100,27 @@
       font-size: 14px;
       color: #ccc;
     }
+
+    @media (max-width: 480px) {
+      .text-logo {
+        font-size: 14px;
+        top: 12px;
+        left: 12px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="text-logo">ONCE</div>
-  <img src="./images/logo.png" alt="Logo" class="image-logo" />
+  <img src="./images/favicon.png" alt="Logo" class="image-logo" />
 
   <div class="content">
     <h2>WHAT IS ONCE?</h2>
