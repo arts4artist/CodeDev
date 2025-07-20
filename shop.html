@@ -23,19 +23,29 @@
       src: url('./Fonts/Sor.woff2') format('woff2');
     }
 
-    body {
+    * {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       background-color: rgb(16, 16, 16);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: 'Sor', sans-serif;
       color: white;
       font-size: 24px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
