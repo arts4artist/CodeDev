@@ -1,6 +1,6 @@
 {
-  "name": "CodeDev",
-  "short_name": "Code",
+  "name": "HobbyDev",
+  "short_name": "Hobby",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#101010",
